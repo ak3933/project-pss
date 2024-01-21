@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{html,js}",
   ],
   theme: {
+    fontFamily: {
+      display: ["Roboto", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],

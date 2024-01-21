@@ -1,4 +1,16 @@
 {
+  "name": "project-pss",
+  "version": "1.0.0",
+  "description": "Website for Paridhee Sewa Sansthan",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Akshay Kumar",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

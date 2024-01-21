@@ -5,7 +5,9 @@ export default function Footer() {
     return (
         <div className="bg-zinc-800 text-zinc-300 rounded-lg py-10">
             <div className="h-64 grid grid-cols-3 md:grid-flow-col">
-                <div>logo</div>
+                <div className="flex justify-center items-center">
+                    <img className="h-42 w-52" src={require("../Resources/images/logo-nobg.png")} alt="logo of the NGO"></img>
+                </div>
                 <div>
                     <h2 className="font-bold text-xl mb-4">Quick Links</h2>
                     <hr className="w-1/6 mb-8 border-red-600 border-2"></hr>

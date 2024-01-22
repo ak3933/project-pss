@@ -1,10 +1,14 @@
 {
   "name": "project-pss",
   "version": "1.0.0",
+  "homepage": "https://ak3933.github.io/project-pss",
   "description": "Website for Paridhee Sewa Sansthan",
   "scripts": {
     "start": "parcel src/index.html",
-    "test": "jest"
+    "test": "jest",
+    "build": "rm -rf build/* && parcel build src/index.html --public-url ./ --dist-dir build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

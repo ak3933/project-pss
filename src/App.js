@@ -7,13 +7,16 @@ import About from "./Components/About.js";
 import Error from "./Components/Error.js";
 import ContactUs from "./Components/Contact.js";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { AppContextProvider } from "./Components/AppContext.js";
 
 function AppLayout(){
     return (
-        <div className="">
-            <Header />
-            <Outlet />
-            <Footer />
+        <div className="text-sm">
+            <AppContextProvider>
+                <Header />
+                <Outlet />
+                <Footer />
+            </AppContextProvider>
         </div>
     )
 }

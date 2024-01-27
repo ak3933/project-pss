@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom" 
+import { Link, useLocation } from "react-router-dom" 
 export default function Header() {
     const [y, setY] = useState(0);
+    const location = useLocation();
+    useEffect(() => {
+        // runs on location, i.e. route, change
+        if(location.pathname ==="/"){
+            
+        }
+      }, [location])
     useEffect(() => {
         setY(window.scrollY);
         window.addEventListener("scroll", (e) => setY(window.scrollY));
@@ -11,7 +18,7 @@ export default function Header() {
 
     }
     return (
-        <div className={`flex justify-around items-center transition-all duration-200 bg-white fixed w-full z-[1] ${ y>100 ? " shadow-md" : "bg-opacity-20"}`}>
+        <div className={`flex justify-around items-center transition-all duration-200 bg-white w-full ${ y>100 ? "shadow-md" : "bg-opacity-20"}`}>
             <div className="flex items-center" >
                 <img className="h-20 w-24" src={require("../Resources/images/logo-nobg.png")} alt="logo of the NGO"></img>
                 <h1 className="text-xl pl-4 leading-5">Paridhee <br />Sewa <br />Sansthan</h1>

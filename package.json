@@ -8,7 +8,7 @@
     "test": "jest",
     "build": "rm -rf docs/* && parcel build src/index.html --public-url ./ --dist-dir build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 {
   "name": "project-pss",
   "version": "1.0.0",
-  "homepage": "https://ak3933.github.io/project-pss",
+  "homepage": "https://ak3933.github.io",
   "description": "Website for Paridhee Sewa Sansthan",
   "scripts": {
     "start": "parcel src/index.html",
